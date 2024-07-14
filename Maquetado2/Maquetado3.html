@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boogle</title>
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-links, .bottom-links {
+            margin: 10px 0;
+        }
+        .top-links a, .bottom-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1a0dab;
+        }
+
+        .bottom-links{
+            text-align: center;
+        }
+        .search-container {
+            margin-top: 150px;
+            text-align: center;
+            flex: 1;
+        }
+        .search-container input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+
+        }
+        .search-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        a {
+            border-right: 2px solid #000;
+            padding-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 12px;
+            color: #70757a;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #70757a;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-links">
+        <a href="#">Web</a>
+        <a href="#">Images</a>
+        <a href="#">Maps</a>
+        <a href="#">News</a>
+        <a href="#">more ▾</a>
+        <span style="float: right;">
+            <a href="#">Boogle</a>
+            <a href="#">Sign In</a>
+        </span>
+    </div>
+    <div class="search-container">
+        <h1>Boogle</h1>
+        <form>
+            <input type="text" name="q">
+            <br>
+            <input type="submit" value="Boogle Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </form>
+        <div>
+            <a href="#">Advanced Search</a>
+            <a href="#">Preferences</a>
+        </div>
+    </div>
+    <div class="bottom-links">
+        <a href="#">Advertising Programs</a>
+        <a href="#">Business Solutions</a>
+        <a href="#">About Boogle</a>
+    </div>
+    <div class="footer">
+        &copy; 2024 Boogle
+    </div>
+</body>
+</html>
